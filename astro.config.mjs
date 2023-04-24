@@ -4,7 +4,6 @@ import react from '@astrojs/react';
 
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
-import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,7 +12,5 @@ export default defineConfig({
   preact(),
   // Enable React for the Algolia search component.
   react(), mdx(), sitemap()],
-  site: `https://docs.hansel.co`,
-  output: "server",
-  adapter: cloudflare()
+  site: `https://docs.hansel.co`
 });
