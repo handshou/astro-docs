@@ -37,33 +37,24 @@ export type Sidebar = Record<
 export const SIDEBAR: Sidebar = {
     en: {
         'Introduction': [
-            { text: 'Getting Started', link: 'en/getting-started' },
-            { text: 'Configuration', link: 'en/configuration' },
-            { text: 'Astro Templates', link: 'en/astro-templates' },
+            { text: 'Getting started', link: 'en/getting-started' },
+            { text: 'How things work', link: 'en/how-things-work' },
+            { text: 'Templates', link: 'en/templates' },
         ],
-        'Lay of the Land': [
-            { text: 'Notion', link: 'en/info-notion' },
-            { text: 'Github', link: 'en/info-github' },
-            { text: 'Cloudflare', link: 'en/info-cloudflare'},
-            { text: 'Cloudinary', link: 'en/info-cloudinary' },
+        'Writing': [
+            { text: 'Notion', link: 'en/using-notion'},
+            { text: 'Configuration', link: 'en/configuring-notion'},
         ],
-        'Set Up Notion': [
-            { text: 'Using Notion', link: 'en/using-notion' },
-            { text: 'Databases', link: 'en/using-notion-databases' },
-            { text: 'Pages', link: 'en/using-notion-pages' },
-        ],
-        'Domain': [
-            { text: 'Buying a Name', link: 'en/domain-buying' },
-            { text: 'Connect Cloudflare', link: 'en/domain-cloudflare'},
-            { text: 'Subdomains', link: 'en/domain-subdomain' },
-        ],
-        'Metadata': [
-            { text: 'SEO', link: 'en/meta-seo' },
-            { text: 'RSS', link: 'en/meta-rss' },
-            { text: 'Favicon', link: 'en/meta-favicon' },
+        'Images': [
+            { text: 'Cloudinary', link: 'en/using-cloudinary' },
         ],
         'Automation': [
-            { text: 'Nightly Updates', link: 'en/automation-nightly' },
+            { text: 'GitHub', link: 'en/using-github' },
+        ],
+        'Hosting': [
+            { text: 'Cloudflare', link: 'en/using-cloudflare'},
+            { text: 'Configuration', link: 'en/configuring-cloudflare'},
+            { text: 'Domains', link: 'en/configuring-domains'},
         ],
     },
 };
