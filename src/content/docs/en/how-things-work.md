@@ -1,38 +1,55 @@
 ---
 title: "How things work"
-description: "Lorem ipsum dolor sit amet - 4"
+description: "Building the website by combining services together."
 ---
 
-This is a fully-featured page, written in Markdown!
+The four services combined to produce a fast and free site. 
 
-## Actions
+- Notion 
+- GitHub
+- Cloudinary 
+- Cloudflare 
 
-Lorem ipsum dolor sit amet, **consectetur adipiscing elit**. Sed ut tortor _suscipit_, posuere ante id, vulputate urna. Pellentesque molestie aliquam dui sagittis aliquet. Sed sed felis convallis, lacinia lorem sit amet, fermentum ex. Etiam hendrerit mauris at elementum egestas. Vivamus id gravida ante. Praesent consectetur fermentum turpis, quis blandit tortor feugiat in. Aliquam erat volutpat. In elementum purus et tristique ornare. Suspendisse sollicitudin dignissim est a ultrices. Pellentesque sed ipsum finibus, condimentum metus eget, sagittis elit. Sed id lorem justo. Vivamus in sem ac mi molestie ornare.
+Read the following explanations to find out more!
 
-## Designs
+## Layman
 
-## Updates
+1. Open Notion to **Add**, **Edit**, **Flag content** for publishing.
+1. **Click on a Notion button** to trigger build process.
+1. Part of the automatic process **saves content** to GitHub.
+1. Part of the automatic process **builds pages** using Astro templates.
+1. Part of the automatic process **hoists images** to Cloudinary.
+1. Final part of the process **serves files** on Cloudflare.
 
-## Hosting
+## Technical
 
-```markdown
----
-title: Markdown Page!
-lang: en
-layout: ~/layouts/MainLayout.astro
----
+[See diagram](https://github.com/handshou/blog-content#workflows) on GitHub.
 
-# Markdown example
+1. Add or edit content on **Notion** apps. 
+1. After editing, a button on Notion will trigger a **Cloudflare worker** and 
+**GitHub Actions**.
+1. **Notion's** API is used to retrieve Pages and Databases to **GitHub**.
+1. **GitHub Actions** builds site via **Astro** template and **Notion**
+content.
+1. Images are hoisted from **Notion** to **Cloudinary** automatically.
+1. **Cloudflare Adapter** will host and serve the built site using files from 
+**GitHub repository**.
 
-This is a fully-featured page, written in Markdown!
+## Services
 
-## Section A
+### GitHub Actions
 
-Lorem ipsum dolor sit amet, **consectetur adipiscing elit**. Sed ut tortor _suscipit_, posuere ante id, vulputate urna. Pellentesque molestie aliquam dui sagittis aliquet. Sed sed felis convallis, lacinia lorem sit amet, fermentum ex. Etiam hendrerit mauris at elementum egestas. Vivamus id gravida ante. Praesent consectetur fermentum turpis, quis blandit tortor feugiat in. Aliquam erat volutpat. In elementum purus et tristique ornare. Suspendisse sollicitudin dignissim est a ultrices. Pellentesque sed ipsum finibus, condimentum metus eget, sagittis elit. Sed id lorem justo. Vivamus in sem ac mi molestie ornare.
+To be elaborated.
 
-## Section B
+### Astro Templates
 
-Nam quam dolor, pellentesque sed odio euismod, feugiat tempus tellus. Quisque arcu velit, ultricies in faucibus sed, ultrices ac enim. Nunc eget dictum est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ex nisi, egestas mollis ultricies ut, laoreet suscipit libero. Nam condimentum molestie turpis. Sed vestibulum sagittis congue. Maecenas tristique enim et tincidunt tempor. Curabitur ac scelerisque nulla, in malesuada libero. Praesent eu tempus odio. Pellentesque aliquam ullamcorper quam at gravida. Sed non fringilla mauris. Aenean sit amet ultrices erat. Vestibulum congue venenatis tortor, nec suscipit tortor. Aenean pellentesque mauris eget tortor tincidunt pharetra.
-```
+To be elaborated.
 
+### Updating Files
+
+To be elaborated.
+
+### Hosting
+
+To be elaborated.
 

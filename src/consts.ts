@@ -37,24 +37,24 @@ export type Sidebar = Record<
 export const SIDEBAR: Sidebar = {
     en: {
         'Introduction': [
-            { text: 'Getting started', link: 'en/getting-started' },
+            { text: 'Get started', link: 'en/get-started' },
             { text: 'How things work', link: 'en/how-things-work' },
             { text: 'Templates', link: 'en/templates' },
         ],
-        'Writing': [
-            { text: 'Notion', link: 'en/using-notion'},
-            { text: 'Configuration', link: 'en/configuring-notion'},
+        'Notion (WIP)': [
+            { text: 'Configure', link: 'en/configure-notion'},
+            { text: 'Write', link: 'en/use-notion'},
         ],
-        'Images': [
-            { text: 'Cloudinary', link: 'en/using-cloudinary' },
+        'GitHub (WIP)': [
+            { text: 'Posts', link: 'en/use-github' },
         ],
-        'Automation': [
-            { text: 'GitHub', link: 'en/using-github' },
+        'Cloudinary (WIP)': [
+            { text: 'Images', link: 'en/use-cloudinary' },
         ],
-        'Hosting': [
-            { text: 'Cloudflare', link: 'en/using-cloudflare'},
-            { text: 'Configuration', link: 'en/configuring-cloudflare'},
-            { text: 'Domains', link: 'en/configuring-domains'},
+        'Cloudflare (WIP)': [
+            { text: 'Configure', link: 'en/configure-cloudflare'},
+            { text: 'Hosting', link: 'en/use-cloudflare'},
+            { text: 'Domain name', link: 'en/configure-domains'},
         ],
     },
 };

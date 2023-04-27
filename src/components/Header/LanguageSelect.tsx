@@ -30,7 +30,7 @@ const LanguageSelect: FunctionComponent<{ lang: string }> = ({ lang }) => {
 				onChange={(e) => {
 					const newLang = e.target.value;
 					let actualDest = window.location.pathname.replace(langPathRegex, '/');
-					if (actualDest == '/') actualDest = `/getting-started`;
+					if (actualDest == '/') actualDest = `/get-started`;
 					window.location.pathname = '/' + newLang + actualDest;
 				}}
 			>

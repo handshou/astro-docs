@@ -157,8 +157,8 @@ If you plan to use Spanish as the default language, you just need to modify the 
 
 ```diff
 <script>
-- window.location.pathname = `/en/getting-started`;
-+ window.location.pathname = `/es/getting-started`;
+- window.location.pathname = `/en/get-started`;
++ window.location.pathname = `/es/get-started`;
 </script>
 ```
 
